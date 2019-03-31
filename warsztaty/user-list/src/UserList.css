@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+    background-color: #82bcd6;
+    text-align: center;
+  }
+
+
+.App {
+  text-align: center;
+}
+
+.UserList {
+  padding: 15vh;
+  display: inline-block;
+  color: white;
+  font-family: 'Calibri';
+}
+
+h1 {
+  text-align: left;
+  color: blue;
+}
+
+.UserList input {
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.UserList button {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(50, 50, 168);
+    color: white;
+}

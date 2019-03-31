@@ -1,9 +1,13 @@
-//komponent klasowy - stworze woja jedna klasę, ktora rozszrza komponent reaktowy
+//komponent klasowy - stworze swoja jedna klasę, ktora rozszerza komponent reaktowy
 import React, {Component} from "react";
 import ButtonsPanel from "./ButtonsPanel";
 import "./Counter.css"
+// import Step from "./Step";
 
 //komponent klasowy musi miec jedna metodę np. render
+
+
+
 class Counter extends Component {
     constructor(props) {
         super(props);  //super - kluczowe słówko
@@ -94,6 +98,8 @@ resetCounter = (flag) => {
         )
     }
 }
+
+// let step = this._inputStep.value;
 
 export default Counter;
 

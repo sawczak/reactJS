@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./ButtonsPanel.css";
+// import Step from "./Step";
 
 class ButtonsPanel extends Component {
 
@@ -12,6 +13,8 @@ class ButtonsPanel extends Component {
         // console.log('resetOrReinitCounter METHODE of ButtonsPanel');
         // console.log(flag);
         // przekazywanie parametru do góry
+        // console.log(this._inputStep.value);
+
         this.props.resetCounterValue(flag);
     }
 
@@ -28,10 +31,14 @@ class ButtonsPanel extends Component {
                 {/* wersja z buttonClick powyżej */}
                 <button onClick={() => { this.resetOrReinitCounter(0) } }>Reset</button>
                 <button onClick={() => { this.resetOrReinitCounter(1) } }>ReInit</button>
+                {/* <input ref={(data) => { this._inputStep = data} } type="number" /> */}
                 
 
                 {/* <button onClick={() => { this.nazwaMojejMetody() } }>Re2Init</button> */}
                 {/* <button onClick={function () { this.resetOrReinitCounter(1) } }>ReInit</button> */}
+            
+            
+            
             </div>
         )
     }
