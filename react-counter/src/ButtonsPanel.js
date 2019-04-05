@@ -31,9 +31,8 @@ class ButtonsPanel extends Component {
                 {/* wersja z buttonClick powyżej */}
                 <button onClick={() => { this.resetOrReinitCounter(0) } }>Reset</button>
                 <button onClick={() => { this.resetOrReinitCounter(1) } }>ReInit</button>
-                {/* <input ref={(data) => { this._inputStep = data} } type="number" /> */}
-                
-
+               
+            
                 {/* <button onClick={() => { this.nazwaMojejMetody() } }>Re2Init</button> */}
                 {/* <button onClick={function () { this.resetOrReinitCounter(1) } }>ReInit</button> */}
             

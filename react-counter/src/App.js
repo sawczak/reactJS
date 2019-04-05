@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Counter from './Counter';
 
 class App extends Component {
   render() {
 /*     let imie = "Iza";
-    let wiek = 28;
-    let miesiace = wiek * 12; */
+    let wiek = 10;
+    let miesiace = wiek * 6; */
     return (
       <div className="App">
         <header className="App-header">

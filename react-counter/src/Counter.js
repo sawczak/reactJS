@@ -2,7 +2,7 @@
 import React, {Component} from "react";
 import ButtonsPanel from "./ButtonsPanel";
 import "./Counter.css"
-// import Step from "./Step";
+import Step from "./Step";
 
 //komponent klasowy musi miec jedna metodę np. render
 
@@ -50,6 +50,25 @@ resetCounter = (flag) => {
 
 
 
+addStep = (krok) => {
+    let step = this._inputStep.value
+
+
+    if (krok === 0) {
+        this.setState ({
+            step: 0,
+        });
+        
+    }else if (krok === 1) {
+        this.setState ({
+            step: this.props._inputStep,
+        })
+        
+    }
+
+    this.setState({step})
+
+}
 
 /* druga wersja
     changeValue = () => {
@@ -84,7 +103,11 @@ resetCounter = (flag) => {
                 </span>
                 <ButtonsPanel changeCounterValue={this.changeValue} 
                 resetCounterValue={this.resetCounter} />
+                <Step step={this.state.addStep} />
+                {/* <input ref={(data) => { this._inputStep = data} } type="number" /> */}
 
+
+                {/* onClick={() => { this.resetOrReinitCounter(0) } } */}
                 {/* <button onClick={this.kliknijMnie}>Kliknij mnie</button> */}
 
                 {/* <button onClick={this.changeValue}>
